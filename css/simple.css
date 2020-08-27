@@ -1,0 +1,251 @@
+html {
+  font-size: 16px;
+}
+body,
+ol,
+ul,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+th,
+td,
+dl,
+dd,
+form,
+fieldset,
+legend,
+input,
+textarea,
+select {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background: #fff;
+  -webkit-text-size-adjust: 100%;
+}
+a {
+  color: #000;
+  text-decoration: none;
+}
+em {
+  font-style: normal;
+}
+li {
+  list-style: none;
+}
+img {
+  border: 0;
+  vertical-align: middle;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+p {
+  word-wrap: break-word;
+}
+.cl {
+  zoom: 1;
+}
+.cl:after {
+  content: "";
+  display: block;
+  overflow: hidden;
+  clear: both;
+  height: 0;
+  visibility: hidden;
+}
+.Flex {
+  display: flex;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flexbox;
+}
+header {
+  margin: 0 auto;
+  max-width: 800px;
+  border-bottom: 1px solid #363636;
+  padding: 3rem 2rem;
+}
+header .nav {
+  float: right;
+}
+header .nav .nav-link {
+  padding: 1rem 1rem;
+  display: inline-block;
+}
+#content-outer {
+  max-width: 800px;
+  margin: 0 auto;
+  margin-top: 2rem;
+}
+#content-outer #content-inner,
+#content-outer .page {
+  padding: 1rem 0 1rem;
+}
+#content-outer #content-inner .prev,
+#content-outer .page .prev {
+  float: left;
+}
+#content-outer #content-inner .next,
+#content-outer .page .next {
+  float: right;
+}
+#content-outer #content-inner .recent-post-item,
+#content-outer .page .recent-post-item {
+  padding: 3rem 0 1.5rem;
+  border-bottom: 1px solid #828282;
+}
+#content-outer #content-inner .recent-post-item .read,
+#content-outer .page .recent-post-item .read {
+  float: right;
+}
+#content-outer #content-inner .recent-post-item h1,
+#content-outer .page .recent-post-item h1 {
+  padding: 0 0 1rem 0;
+}
+.hljs {
+  display: block;
+  overflow-x: auto;
+  padding: 0.5em;
+  background: #f0f0f0;
+}
+.hljs,
+.hljs-subst {
+  color: #444;
+}
+.hljs-comment {
+  color: #888;
+}
+.hljs-attribute,
+.hljs-doctag,
+.hljs-keyword,
+.hljs-meta-keyword,
+.hljs-name,
+.hljs-selector-tag {
+  font-weight: 700;
+}
+.hljs-deletion,
+.hljs-number,
+.hljs-quote,
+.hljs-selector-class,
+.hljs-selector-id,
+.hljs-string,
+.hljs-template-tag,
+.hljs-type {
+  color: #800;
+}
+.hljs-section,
+.hljs-title {
+  color: #800;
+  font-weight: 700;
+}
+.hljs-link,
+.hljs-regexp,
+.hljs-selector-attr,
+.hljs-selector-pseudo,
+.hljs-symbol,
+.hljs-template-variable,
+.hljs-variable {
+  color: #bc6060;
+}
+.hljs-literal {
+  color: #78a960;
+}
+.hljs-addition,
+.hljs-built_in,
+.hljs-bullet,
+.hljs-code {
+  color: #397300;
+}
+.hljs-meta {
+  color: #1f7199;
+}
+.hljs-meta-string {
+  color: #4d99bf;
+}
+.hljs-emphasis {
+  font-style: italic;
+}
+.hljs-strong {
+  font-weight: 700;
+}
+.archive aside {
+  max-width: 500px;
+}
+.archive aside .archive-list .archive-list-item .archive-list-link {
+  font-size: 30px;
+  display: block;
+  margin-left: 30px;
+}
+.archive aside .archive-list-item {
+  list-style-type: none;
+  position: relative;
+  width: 2px;
+  margin: 0 auto;
+  padding-top: 20px;
+  background: #b5b5b5;
+}
+.archive aside .archive-list-item .archive-list-box {
+  width: 200px;
+  height: 50px;
+  margin-left: 30px;
+  transform: translate3d(-200px, 0, 0);
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s ease-in-out;
+  position: relative;
+  bottom: 0;
+  width: 400px;
+  padding: 15px;
+}
+.archive aside .archive-list-item .archive-list-box a {
+  font-size: 25px;
+  display: block;
+  margin-bottom: 12px;
+}
+.archive aside .archive-list-item .archive-list-box time {
+  font-size: 15px;
+  color: #ccc;
+}
+.archive aside .archive-list-item::after {
+  content: '';
+  border: 5px solid #fff;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  bottom: 0;
+  transform: translateX(-50%);
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: inherit;
+  background: #8e8d8d;
+  transition: background 0.5s ease-in-out;
+}
+.archive aside .archive-list-item::after a {
+  font-size: 25px;
+}
+.archive aside .archive-list-item::after time {
+  font-size: 15px;
+  color: #ccc;
+}
+.archive aside .in-view .archive-list-box {
+  transform: none;
+  visibility: visible;
+  opacity: 1;
+}
+.archive aside .in-view .archive-list-box::after {
+  background: #f45b69;
+}
+.social {
+  max-width: 250px;
+  margin: 100px auto;
+}
